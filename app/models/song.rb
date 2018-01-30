@@ -18,4 +18,8 @@ class Song < ActiveRecord::Base
   def artist_name
     self.artist.name
   end
+
+  def note_contents
+    self.note_contents
+  end
 end
