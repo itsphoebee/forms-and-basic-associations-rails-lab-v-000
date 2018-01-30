@@ -23,8 +23,8 @@ class Song < ActiveRecord::Base
     contents.each do |content|
       if !content.blank?
         self.notes.build(content:content)
+        self.save
       end
-      self.save
     end
   end
 
