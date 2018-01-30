@@ -20,7 +20,7 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents=
-    self.notes.contents = Note.find_by(song_id: self.id)
+    self.notes = Note.find_by(song_id: self.id)
   end
 
   def note_contents
