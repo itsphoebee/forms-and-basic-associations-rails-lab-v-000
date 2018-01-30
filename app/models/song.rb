@@ -20,11 +20,7 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents=(notes)
-    notes.each do |n|
-      if n.song_id == self.id
-        self.notes << n
-      end
-    end
+
   end
 
   def note_contents
