@@ -19,8 +19,12 @@ class Song < ActiveRecord::Base
     self.artist.name
   end
 
-  def note_contents=
-    self.notes = Note.find_by(song_id: self.id)
+  def note_contents=(notes)
+    notes.each do |n|
+      if n.song_id == self.id
+        self.notes << n
+      end
+    end
   end
 
   def note_contents
