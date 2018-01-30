@@ -9,9 +9,9 @@
 
   Genre: <%= f.collection_select :genre_id, Genre.all, :id, :name %><br>
 
-  Notes:<input name="song[note_contents][]" id="song_notes_1"><br>
-  Notes:<input name="song[note_contents][]" id="song_notes_2"><br>
-  Notes:<input name="song[note_contents][]" id="song_notes_3"><br>
+  Notes: <input name="song[note_contents][]" id="song_notes_1"><br>
+  Notes: <input name="song[note_contents][]" id="song_notes_2"><br>
+  Notes: <input name="song[note_contents][]" id="song_notes_3"><br>
 
   <%= f.submit %>
 <% end %>
