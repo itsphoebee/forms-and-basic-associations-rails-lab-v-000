@@ -19,6 +19,9 @@ class Song < ActiveRecord::Base
     self.artist.name
   end
 
+  def note_contents=
+  end
+  
   def note_contents
     self.note_contents
   end
